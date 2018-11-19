@@ -1,0 +1,67 @@
+/**
+* Copyright (c) 技术部门出品 zgxt2016@163.com
+*/
+@import "./reset";
+.bgWhite {
+    background-color: @fff;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.b {
+    border: 1px solid rebeccapurple;
+}
+/*add options css*/
+.search_product {
+    height: 1.5rem;
+    padding-top: 0.4rem;
+    background-color: @fff;
+    position: relative;
+    img {
+        position: absolute;
+        left: 0.67rem;
+        top: 0.67rem;
+        width: 0.43rem;
+    }
+    input {
+        width: 9.2rem;
+        height: 0.96rem;
+        background-color: #F5F5F5;
+        border: none;
+        border-radius: 5px;
+        font-size: @font_size_43;
+        padding-left: .96rem;
+    }
+}
+
+.product_list {
+    li {
+        height: 1.09rem;
+        .flexCenter;
+        .bgWhite;
+        img {
+            width: .53rem;
+            height: .53rem;
+        }
+        span:nth-child(1) {
+            padding: 0.28rem 0;
+            width: 20%;
+        }
+        span:nth-child(2), span:nth-child(3){
+            line-height: 1.09rem;
+            font-size: @font_size_4;
+            color: @333;
+        }
+        span:nth-child(2) {
+            width: 20%;
+        }
+        span:nth-child(3) {
+            width: 60%;
+            text-align: left;
+            text-indent: 0.4rem;
+        }
+    }
+}

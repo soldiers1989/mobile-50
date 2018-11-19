@@ -1,0 +1,345 @@
+/**
+* Copyright (c) 技术部门出品 zgxt2016@163.com
+*/
+@import "./reset";
+/*行情页面css*/
+span {
+    box-sizing: border-box;
+}
+
+.b {
+   border: 1px solid rebeccapurple;
+}
+
+.bgWhite {
+    background-color: @fff;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.market_50 {
+    height: 4.29rem;
+    .bgWhite;
+    p:nth-child(1) {
+        height: 1.23rem;
+        padding: 0.4rem 0 0.27rem 0;
+        color: @333;
+        font-size: @font_size_4;
+    }
+
+    p:nth-child(2) {
+        font-size: @font_size_96;
+        color: @333;
+        line-height: 1.33rem;
+        position: relative;
+    }
+
+    img {
+        width: 0.24rem;
+        height: 0.43rem;
+        position: absolute;
+        left: 6.61rem;
+        top: 0.45rem
+    }
+
+    ul {
+        .flexCenter;
+        flex-wrap: wrap;
+        height: 1.73rem;
+        padding: .27rem 0.8rem;
+        li {
+            width: 50%;
+            font-size: @font_size_37;
+            text-align: left;
+            line-height: 0.6rem;
+        }
+        li span:nth-child(1) {
+            color: @333;
+        }
+        li span:nth-child(2) {
+            padding-left: 0.4rem;
+        }
+        li:nth-child(1), li:nth-child(3) {
+
+        }
+        li:nth-child(2), li:nth-child(4) {
+            padding-left: 1.2rem;
+        }
+    }
+}
+
+.market_tab {
+    .bgWhite;
+    .flexCenter;
+    height: 1.17rem;
+    margin-top: 0.13rem;
+    span {
+        width: 100%;
+        font-size: @font_size_45;
+        color: @333;
+        line-height: 1.17rem;
+    }
+}
+
+.spanSelect {
+    border-bottom: 0.05rem solid @red;
+    color: @red !important;
+}
+
+.market_title {
+    .flexCenter;
+    height: .96rem;
+    line-height: .96rem;
+    font-family: PingFangSC-Regular;
+    div {
+        width: 100%;
+        color: @fff;
+        font-size: @font_size_4;
+        .flexCenter;
+    }
+    div:nth-child(1) {
+        background-color: @red;
+        span:nth-child(1) {
+            width: 40%;
+        }
+        span:nth-child(2) {
+            width: 40%;
+        }
+        span:nth-child(3) {
+            width: 20%;
+        }
+    }
+    div:nth-child(2) {
+        background-color: @marketGreen;
+        span:nth-child(1) {
+            width: 20%;
+        }
+        span:nth-child(2) {
+            width: 40%;
+        }
+        span:nth-child(3) {
+            width: 40%;
+        }
+    }
+}
+
+.market_content {
+    li {
+        .flexCenter;
+        height: 1.07rem;
+        line-height: 1.07rem;
+        font-size: @font_size_4;
+        background-color: @fff;
+         span {
+             width: 100%;
+         }
+        span:nth-child(3) {
+            color: #397EEA;
+            background-color: #F4F8FF;
+        }
+    }
+    li:nth-child(odd) {
+        // background: #F4F8FF;
+    }
+    li:nth-child(even) {
+        // background: @fff;
+    }
+}
+
+/*50ETF行情*/
+.stockDetails_title {
+    .bgWhite;
+    .flexCenter;
+    height: 2.19rem;
+    div {
+        width: 3.15rem;
+        padding: 0.43rem 0.4rem;
+        color: @marketGreen;
+        font-size: @font_size_96;
+    }
+    ul {
+        width: 6.85rem;
+        padding: 0.48rem 0.35rem 0.48rem 0.2rem;
+        .flexCenter;
+        flex-wrap: wrap;
+        font-size: @font_size_37;
+        li {
+            .flexCenter;
+            width: 50%;
+            text-align: right;
+            span {
+                width: 100%;
+                line-height: 0.62rem;
+                white-space: nowrap;
+            }
+            span:nth-child(1) {
+                color: @333;
+                padding-right: 0.3rem;
+            }
+        }
+        li:nth-child(2) ,li:nth-child(4) {
+        }
+    }
+}
+
+.stockDetails_market {
+    .bgWhite;
+    margin-top: 0.27rem;
+    img {
+        width: 96%;
+        margin-top: 0.4rem;
+    }
+    p {
+      padding: 0.4rem 1.25rem;
+        font-size: 0.29rem;
+        color: @999;
+    }
+}
+
+.marketDetails_title {
+    .bgWhite;
+    .flexCenter;
+    height: 2.19rem;
+    margin-bottom: 0.27rem;
+    div {
+        width: 3.5rem;
+        padding: 0.28rem 0 0.4rem 0.4rem;
+        span:nth-child(1) {
+            font-size: @font_size_96;
+        }
+        span:nth-child(2) {
+            font-size: @font_size_35;
+        }
+    }
+    ul {
+        width: 6.5rem;
+        padding: 0.48rem 0.4rem 0.48rem 0.2rem;
+        .flexCenter;
+        flex-wrap: wrap;
+        font-size: @font_size_37;
+        li {
+            .flexCenter;
+            width: 50%;
+            text-align: right;
+            span {
+                width: 100%;
+                line-height: 0.62rem;
+            }
+            span:nth-child(1) {
+                color: @333;
+                padding-right: 0.3rem;
+            }
+        }
+        li:nth-child(2) ,li:nth-child(4) {
+        }
+    }
+}
+
+.market_details_title {
+    height: 1.07rem;
+    background: #EAEDF2;
+    .flexCenter;
+    line-height: 1.07rem;
+    li {
+        width: 100%;
+        font-size: @font_size_43;
+        text-align: center;
+        position: relative;
+    }
+    li:first-child:after {
+        position: absolute;
+        top: 0.16rem;
+        right: 0;
+        content: ' ';
+        width: 0.05rem;
+        height: 0.75rem;
+        border-right: 0.05rem solid @ccc;
+    }
+}
+
+.tabActive {
+    color: #4485EC;
+}
+
+.marketDetails_button {
+    height: 1.17rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    .flexCenter;
+    button {
+        height: 100%;
+        border: none;
+        width: 100%;
+        font-size: @font_size_45;
+    }
+    button:nth-child(1) {
+        background-color: @fff;
+        box-shadow: 0 -1px 2px 0 rgba(0,0,0,0.05);
+    }
+
+    button:nth-child(2) {
+        background-color: @red;
+        color: @fff;
+    }
+}
+
+.market_details_price {
+    li {
+        .flexCenter;
+        height: .96rem;
+        span {
+            width: 100%;
+            line-height: .96rem;
+            font-size: @font_size_37;
+        }
+    }
+    li:nth-child(1) {
+        background: #F6F6F8;
+    }
+    li:nth-child(7) {
+        height: 0.02rem;
+        background-color: @fff;
+        padding: 0 0.8rem;
+        p {
+            border-bottom: 1px solid @ccc;
+            width: 100%;
+        }
+    }
+    li:not(:first-child) {
+        background-color: @fff;
+    }
+}
+
+.market_details_details {
+    background-color: @fff;
+    li {
+        .flexCenter;
+        height: .96rem;
+        line-height: .96rem;
+        border-bottom: 0.03rem solid @borderColor;
+        p {
+            .flexCenter;
+            width: 100%;
+            span {
+                width: 100%;
+                font-size: @font_size_4;
+                color: @333;
+            }
+            span:nth-child(1) {
+                text-align: left;
+                padding-left: 0.4rem;
+            }
+            span:nth-child(2) {
+                text-align: right;
+                padding-right: 0.4rem;
+            }
+        }
+        p:nth-child(1) {
+            border-right: 0.03rem solid @borderColor;
+        }
+    }
+}

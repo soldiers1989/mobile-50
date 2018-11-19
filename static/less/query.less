@@ -1,0 +1,86 @@
+    span {
+    display: inline;
+}
+table {
+    width: 100%;
+    background-color: @bgc_fff;
+    margin-top: 0.13rem;
+    thead,
+    tbody {
+        tr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            th {
+                flex: 1;
+                text-align: center;
+            }
+            th:nth-child(1) {
+                flex: 2;
+                text-align: left;
+                text-indent: 0.96rem;
+            }
+            td {
+                flex: 1;
+                text-align: center;
+                p {
+                    text-align: left;
+                }
+            }
+            td:nth-child(1) {
+                flex: 2;
+                text-indent: 0.4rem;
+            }
+        }
+    }
+    thead {
+        tr {
+            height: 1.17rem;
+            border-bottom: 1px solid @borderColor;
+            th {
+                color: @333;
+                font-size: @font_size_4;
+            }
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid @borderColor;
+            td {
+                color: @333;
+                font-size: @font_size_4;
+                ul {
+                    text-align: left;
+                    margin-top: 0.29rem;
+                    margin-bottom: 0.27rem;
+                    li {
+                        font-size: @font_size_35;
+                        margin-bottom: 0.1rem;
+                    }
+                    li:nth-child(1) {
+                        span {
+                            padding: 0.05rem 0.2rem;
+                            color: @fff;
+                            text-align: center;
+                            font-size: @font_size_32;
+                            border-radius: 3px;
+                            margin-left: 0.05rem;
+
+                        }
+                    }
+                    li:nth-child(3) {
+                        margin-top: 0.13rem;
+                        color: @999;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.red {
+    background-color: @red;
+}
+.blue {
+    background-color: @blue;
+}

@@ -1,0 +1,99 @@
+/**
+* Copyright (c) 技术部门出品 zgxt2016@163.com
+*/
+span {
+    display: inline;
+}
+.modal-pay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  .content {
+    width: 7.47rem;
+    border-radius: 10px;
+    background-color: @bgc_fff;
+    overflow: auto;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .header {
+      font-size: @font_size_45;
+      color: @333;
+      height: 1.71rem;
+      line-height: 1.71rem;
+    }
+    .body {
+      text-align: left;
+      padding-left: 0.4rem;
+      padding-right: 0.4rem;
+      margin-bottom: 0.6rem;
+    .cell {
+        border-bottom: 1px solid @borderColor;
+        overflow: hidden;
+            label {
+                color: @333;
+                font-size: @font_size_45;
+                display: block;
+                padding-top: 0.4rem;
+            }
+            input {
+                border: none;
+                width: 100%;
+                height: 0.6rem;
+                margin-top: 0.2rem;
+                color: @666;
+                font-size: @font_size_4;
+                background-color: @bgc_fff;
+            }
+        }
+        .picphone {
+            input {
+              float: left;
+              width: 50%;
+            }
+            button {
+              float: right;
+              width: 3rem;
+              height: 1rem;
+              border: none;
+              margin-bottom: 3px;
+              margin-top: -0.2rem;
+              color: @fff;
+              background-color: @red;
+              border-radius: 5px;
+              font-size: @font_size_35;
+            }
+            .time {
+              background-color: @ccc;
+            }
+          }
+    }
+    .footer {
+      border-top: 1px solid  @borderColor;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 1rem;
+      button {
+        font-size: @font_size_4;
+        width: 50%;
+        height: 100%;
+        border: none;
+        background-color: @bgc_fff;
+      }
+      button:nth-child(1) {
+        color: @333;
+        border-right: 1px solid @borderColor;
+      }
+      button:nth-child(2) {
+        color: @red;
+      }
+    }
+  }
+}

@@ -1,0 +1,69 @@
+/**
+* Copyright (c) 技术部门出品 zgxt2016@163.com
+*/
+span {
+    display: inline;
+}
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  .modal-content {
+    width: 7.47rem;
+    border-radius: 10px;
+    background-color: @bgc_fff;
+    overflow: auto;
+    box-sizing: border-box;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    .modal-header {
+      font-size: @font_size_45;
+      color: @333;
+      height: 1.71rem;
+      line-height: 1.71rem;
+    }
+    .modal-body {
+      text-align: left;
+      padding-left: 0.8rem;
+      padding-right: 1.09rem;
+      margin-bottom: 0.6rem;
+      ul {
+        li {
+          padding: 0.08rem 0;
+          span {
+            font-size: @font_size_35;
+            color: @333;
+            line-height: 0.5rem;
+          }
+        }
+      }
+    }
+    .modal-footer {
+      border-top: 1px solid  @borderColor;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 1rem;
+      button {
+        font-size: @font_size_4;
+        width: 50%;
+        height: 100%;
+        border: none;
+        background-color: @bgc_fff;
+      }
+      button:nth-child(1) {
+        color: @333;
+        border-right: 1px solid @borderColor;
+      }
+      button:nth-child(2) {
+        color: @red;
+      }
+    }
+  }
+}

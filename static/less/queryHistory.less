@@ -1,0 +1,105 @@
+span {
+    display: inline;
+}
+table {
+    width: 100%;
+    background-color: @bgc_fff;
+    margin-top: 0.13rem;
+    thead,
+    tbody {
+        tr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 0.3rem;
+            th {
+                flex: 1;
+                text-align: center;
+            }
+            th:nth-child(1) {
+                flex: 1.8;
+                text-indent: -0.4rem;
+            }
+            th:nth-child(2) {
+                flex: 2.5;
+                text-align: left;
+                text-indent: 0.5rem;
+            }
+            th:nth-child(3) {
+                flex: 0.8;
+            }
+            th:nth-child(5) {
+                flex: 1.4;
+            }
+        }
+    }
+    thead {
+        tr {
+            height: 1.17rem;
+            border-bottom: 1px solid @borderColor;
+            th {
+                color: @333;
+                font-size: @font_size_4;
+            }
+        }
+    }
+    tbody {
+        tr {
+            border-bottom: 1px solid @borderColor;
+            padding: 0 0.3rem;
+            display: flex;
+            td {
+                color: @333;
+                font-size: @font_size_4;
+                margin-top: 0.43rem;
+                margin-bottom: 0.4rem;
+                flex: 1
+            }
+            td:nth-child(1) {
+                flex: 1.8;
+                ul {
+                     text-align: left;
+                    li {
+                        line-height: 0.6rem;
+                        font-size: @font_size_35;
+                    }
+                    li:nth-child(2) {
+                        color: @999;
+                    }
+                }
+            }
+            td:nth-child(2) {
+                flex: 2.5;
+                ul {
+                    text-align: left;
+                    li {
+                        font-size: @font_size_35;
+                        line-height: 0.6rem;
+                    }
+                    li:nth-child(1) {
+                        span {
+                            padding: 0.05rem 0.2rem;
+                            color: @fff;
+                            text-align: center;
+                            font-size: @font_size_32;
+                            border-radius: 3px;
+                        }
+                    }
+                }
+            }
+            td:nth-child(3) {
+                flex: 0.8;
+            }
+            td:nth-child(5) {
+                flex: 1.4;
+            }
+        }
+    }
+}
+
+.red {
+    background-color: @red;
+}
+.blue {
+    background-color: @blue;
+}
